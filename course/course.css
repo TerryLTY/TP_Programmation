@@ -33,10 +33,10 @@ h1::after {
 
 button {
     border-radius: 25px;
+    padding: 20px;
 }
 
 button:hover {
-    border-radius: 25px;
     cursor: pointer;
 }
 

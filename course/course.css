@@ -51,7 +51,7 @@ button:hover {
     transform: translate(0, 25vh);
 }
 
-.voiture { /* class commun ne marche pas rn */
+.voiture {
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;

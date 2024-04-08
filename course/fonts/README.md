@@ -1,1 +1,1 @@
-Dossier pour les typos au besoin
+Dossier pour les typos

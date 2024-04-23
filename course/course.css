@@ -47,8 +47,11 @@ button:hover {
     position: relative;
     background-repeat: no-repeat;
     width: 1200px;
-    height: 400px;
+    height: 360px;
     transform: translate(0, 25vh);
+    border-style: solid;
+    border-color: black;
+    overflow: hidden;
 }
 
 .voiture {
@@ -63,10 +66,23 @@ button:hover {
     background-image: url(/media/voiture1.png);
     top: 60px;
     left: 5px;
+    transition: translate 1s;
 }
 
 #voiture2 {
     background-image: url(/media/voiture2.png);
     bottom: 50px;
     left: 5px;
+    transition: translate 1s;
+}
+
+#decompte {
+  background-color: black;
+  border-style: solid;
+  width: 30px;
+  height: 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
 }

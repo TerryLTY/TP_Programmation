@@ -30,7 +30,7 @@ function deplacerVoiture() {
     voiture2 += translationX2;
     document.getElementById("voiture1").style.translate = voiture1 + "px"; 
     document.getElementById("voiture2").style.translate = voiture2 + "px";
-    //style.translate a la place de style.left pour une animation lisse (c'est plus cool)//
+    //style.translate a la place de style.left pour une animation lisse (c'est plus cool)
 }
 
 function demarrerCourse() {

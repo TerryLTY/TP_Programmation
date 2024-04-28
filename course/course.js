@@ -5,7 +5,7 @@ let translationX1;
 let translationX2;
 let maxTranslation = containerWidth - voiture1;
 let decompte = 10;
-let tempsDepart
+let tempsDepart;
 
 function compteARebour() {
    
@@ -27,9 +27,9 @@ function compteARebour() {
 
 function chronometre() { 
      let temps = Date.now() - tempsDepart;   
-    secondes = Math.floor((temps/1000) % 60);
-    document.getElementById("chronometre1").innerHTML =  (secondes < 10 ? "0":"0") + secondes + " secondes";
-    document.getElementById("chronometre2").innerHTML = (secondes < 10 ? "0" : "0") + secondes + " secondes";
+    secondes = Math.floor((temps/1000));
+    document.getElementById("chronometre1").innerHTML =  (secondes < 10 ? "0":"") + secondes + " secondes";
+    document.getElementById("chronometre2").innerHTML = (secondes < 10 ? "0" : "") + secondes + " secondes";
 }
 
 function aleatoireTranslationX() {

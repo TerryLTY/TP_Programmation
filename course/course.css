@@ -100,6 +100,44 @@ button:hover {
   font-weight: 500;
 }
 
+#chronometre1{
+   position: absolute;
+   top: 35%;
+   left: 50%;
+   transform: translateX(-50%);
+    background-color: black;
+    border-style: solid;
+    width: 190px;
+    box-shadow: 3px 3px red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 1% auto 0 auto;
+    vertical-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500; 
+}
+
+#chronometre2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    border-style: solid;
+    width: 190px;
+    box-shadow: 3px 3px blue;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 1% auto 0 auto;
+    vertical-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500; 
+}
+
 .foot {
     font-family: 'Courier New', Courier, monospace;
     position: fixed;

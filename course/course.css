@@ -14,7 +14,7 @@ body {
 h1 {
     position: relative;
     font-family: "Race Sport";
-    margin: 30px 0;
+    margin-top: 3%;
     font-size: 3.5em;
     text-shadow: 2px 2px 0 red;
 }
@@ -25,15 +25,22 @@ h1::after {
     background-image: url(/media/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 4em;
-    height: 2em;
+    width: 5em;
+    height: 3em;
     position: absolute;
-    top: 0;
+    top: -35px;
+    margin-left: -30px;
 }
 
 button {
-    border-radius: 25px;
     padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 2px 2px 0 red;
+    margin-top: 2%;
 }
 
 button:hover {
@@ -79,10 +86,25 @@ button:hover {
 #decompte {
   background-color: black;
   border-style: solid;
-  width: 30px;
-  height: 20px;
+  padding: 30px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 3px 3px red;
   color: white;
   font-size: 20px;
   text-align: center;
-  margin: 0 auto;
+  margin: 1% auto 0 auto;
+  vertical-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
 }
+
+.foot {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    width: 100vw;
+  }

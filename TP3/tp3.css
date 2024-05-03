@@ -1,1 +1,12 @@
+@font-face {
+    font-family: "Tagettes";
+    src: url("./polices/tagettes.regular.ttf") format(truetype);
+}
 
+* {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Tagettes";
+}

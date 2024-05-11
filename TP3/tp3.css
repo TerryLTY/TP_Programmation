@@ -15,7 +15,7 @@ h1 {
     transform: translateX(-50%);
 }
 
-p {
+footer {
     font-family: 'Courier New', Courier, monospace;
     position: fixed;
     bottom: 0;

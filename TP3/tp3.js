@@ -3,7 +3,8 @@ var titre = document.createElement("h1");
 titre.setAttribute("id", "titre");
 titre.textContent = "Commande de Pizzas";
 
-
+var containeur = document.createElement("div");
+containeur.setAttribute("id", "containeur");
 // Margherita
 var labelFormMargherita = document.createElement("label");
 labelFormMargherita.setAttribute("for", "margherita");
@@ -58,9 +59,8 @@ var labelOignons = document.createElement("label");
 labelOignons.setAttribute("for", "oignons");
 labelOignons.textContent = " Oignons ";
 
-
 // Pepperoni
-var labelFormPepperoni= document.createElement("label");
+var labelFormPepperoni = document.createElement("label");
 labelFormPepperoni.setAttribute("for", "pepperoni");
 labelFormPepperoni.textContent = "Pizza Pepperoni :";
 
@@ -113,7 +113,6 @@ var labelOlive = document.createElement("label");
 labelOlive.setAttribute("for", "olive");
 labelOlive.textContent = " Olive ";
 
-
 // Paiement
 var labelFormPaiement = document.createElement("label");
 labelFormPaiement.setAttribute("for", "paiement");
@@ -152,7 +151,6 @@ var labelEspeces = document.createElement("label");
 labelEspeces.setAttribute("for", "especes");
 labelEspeces.textContent = " Espèces (À la porte) ";
 
-
 // Info Client
 var labelFormClient = document.createElement("label");
 labelFormClient.setAttribute("for", "client");
@@ -175,7 +173,7 @@ var br9 = document.createElement("br");
 
 var labelPrenom = document.createElement("label");
 labelPrenom.setAttribute("for", "prenom");
-labelPrenom.textContent = " Prénom ";
+labelPrenom.textContent = " Prénom : ";
 
 var prenom = document.createElement("input");
 prenom.setAttribute("type", "text");
@@ -200,7 +198,6 @@ labelAdresse1.textContent = " Adresse complète : ";
 var adresse1 = document.createElement("input");
 adresse1.setAttribute("type", "text");
 adresse1.setAttribute("id", "adresse1");
-
 
 // Info Livraison
 var labelFormLivraison = document.createElement("label");
@@ -240,22 +237,18 @@ var adresse2 = document.createElement("input");
 adresse2.setAttribute("type", "text");
 adresse2.setAttribute("id", "adresse2");
 
-
 // Footer
 var foot = document.createElement("footer");
 
-var textefoot = document.createElement("p")
+var textefoot = document.createElement("p");
 textefoot.textContent = "Kordan Radhouane - Lach Thearylou - Lu Ting Yung";
 textefoot.setAttribute = ("id", "foot");
 
-
-// Commander 
+// Commander
 var commander = document.createElement("button");
-commander.setAttribute = ("type", "button");
-commander.setAttribute = ("id", "commander");
+commander.setAttribute("type", "button");
+commander.setAttribute("id", "commander");
 commander.textContent = "Commander";
-
-
 
 formMargherita.appendChild(labelFormMargherita);
 formMargherita.appendChild(br1);
@@ -323,13 +316,14 @@ formLivraison.appendChild(adresse2);
 
 foot.appendChild(textefoot);
 
-
 document.body.appendChild(titre);
-document.body.appendChild(formMargherita);
-document.body.appendChild(formPepperoni);
-document.body.appendChild(formPaiement);
-document.body.appendChild(formClient);
-document.body.appendChild(formLivraison);
+containeur.appendChild(formMargherita);
+containeur.appendChild(formPepperoni);
+containeur.appendChild(formPaiement);
+containeur.appendChild(formClient);
+containeur.appendChild(formLivraison);
 document.body.appendChild(commander);
+document.body.appendChild(containeur);
 document.body.appendChild(foot);
+
 

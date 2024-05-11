@@ -1,7 +1,10 @@
+// Titre
 var titre = document.createElement("h1");
 titre.setAttribute("id", "titre");
 titre.textContent = "Commande de Pizzas";
 
+
+// Margherita
 var labelFormMargherita = document.createElement("label");
 labelFormMargherita.setAttribute("for", "margherita");
 labelFormMargherita.textContent = "Pizza Margherita :";
@@ -56,13 +59,13 @@ labelOignons.setAttribute("for", "oignons");
 labelOignons.textContent = " Oignons ";
 
 
-
+// Pepperoni
 var labelFormPepperoni= document.createElement("label");
 labelFormPepperoni.setAttribute("for", "pepperoni");
 labelFormPepperoni.textContent = "Pizza Pepperoni :";
 
 var formPepperoni = document.createElement("form");
-formPepperoni.setAttribute("id", "pepperoni")
+formPepperoni.setAttribute("id", "pepperoni");
 
 var br3 = document.createElement("br");
 
@@ -111,10 +114,147 @@ labelOlive.setAttribute("for", "olive");
 labelOlive.textContent = " Olive ";
 
 
+// Paiement
+var labelFormPaiement = document.createElement("label");
+labelFormPaiement.setAttribute("for", "paiement");
+labelFormPaiement.textContent = "Mode de paiement :";
+
+var formPaiement = document.createElement("form");
+formPaiement.setAttribute("id", "paiement");
+
+var br5 = document.createElement("br");
+
+var credit = document.createElement("input");
+credit.setAttribute("type", "radio");
+credit.setAttribute("id", "credit");
+
+var labelCredit = document.createElement("label");
+labelCredit.setAttribute("for", "credit");
+labelCredit.textContent = " Carte de Crédit (En ligne) ";
+
+var br6 = document.createElement("br");
+
+var debit = document.createElement("input");
+debit.setAttribute("type", "radio");
+debit.setAttribute("id", "debit");
+
+var labelDebit = document.createElement("label");
+labelDebit.setAttribute("for", "debit");
+labelDebit.textContent = " Débit/Crédit (À la porte) ";
+
+var br7 = document.createElement("br");
+
+var especes = document.createElement("input");
+especes.setAttribute("type", "radio");
+especes.setAttribute("id", "especes");
+
+var labelEspeces = document.createElement("label");
+labelEspeces.setAttribute("for", "especes");
+labelEspeces.textContent = " Espèces (À la porte) ";
+
+
+// Info Client
+var labelFormClient = document.createElement("label");
+labelFormClient.setAttribute("for", "client");
+labelFormClient.textContent = " Informations sur le client : ";
+
+var formClient = document.createElement("form");
+formClient.setAttribute("id", "client");
+
+var br8 = document.createElement("br");
+
+var labelNom = document.createElement("label");
+labelNom.setAttribute("for", "nom");
+labelNom.textContent = " Nom : ";
+
+var nom = document.createElement("input");
+nom.setAttribute("type", "text");
+nom.setAttribute("id", "nom");
+
+var br9 = document.createElement("br");
+
+var labelPrenom = document.createElement("label");
+labelPrenom.setAttribute("for", "prenom");
+labelPrenom.textContent = " Prénom ";
+
+var prenom = document.createElement("input");
+prenom.setAttribute("type", "text");
+prenom.setAttribute("id", "prenom");
+
+var br10 = document.createElement("br");
+
+var labelTelephone1 = document.createElement("label");
+labelTelephone1.setAttribute("for", "telephone1");
+labelTelephone1.textContent = " Téléphone : ";
+
+var telephone1 = document.createElement("input");
+telephone1.setAttribute("type", "text");
+telephone1.setAttribute("id", "telephone1");
+
+var br11 = document.createElement("br");
+
+var labelAdresse1 = document.createElement("label");
+labelAdresse1.setAttribute("for", "adresse1");
+labelAdresse1.textContent = " Adresse complète : ";
+
+var adresse1 = document.createElement("input");
+adresse1.setAttribute("type", "text");
+adresse1.setAttribute("id", "adresse1");
+
+
+// Info Livraison
+var labelFormLivraison = document.createElement("label");
+labelFormLivraison.setAttribute("for", "livraison");
+labelFormLivraison.textContent = " Informations sur la livraison : ";
+
+var formLivraison = document.createElement("form");
+formLivraison.setAttribute("id", "livraison");
+
+var br12 = document.createElement("br");
+
+var labelNomPrenom = document.createElement("label");
+labelNomPrenom.setAttribute("for", "nomprenom");
+labelNomPrenom.textContent = " Nom et prénom : ";
+
+var nomPrenom = document.createElement("input");
+nomPrenom.setAttribute("type", "text");
+nomPrenom.setAttribute("id", "nomprenom");
+
+var br13 = document.createElement("br");
+
+var labelTelephone2 = document.createElement("label");
+labelTelephone2.setAttribute("for", "telephone2");
+labelTelephone2.textContent = " Téléphone : ";
+
+var telephone2 = document.createElement("input");
+telephone2.setAttribute("type", "text");
+telephone2.setAttribute("id", "telephone2");
+
+var br14 = document.createElement("br");
+
+var labelAdresse2 = document.createElement("label");
+labelAdresse2.setAttribute("for", "adresse2");
+labelAdresse2.textContent = " Adresse de livraison : ";
+
+var adresse2 = document.createElement("input");
+adresse2.setAttribute("type", "text");
+adresse2.setAttribute("id", "adresse2");
+
+
+// Footer
 var foot = document.createElement("footer");
+
 var textefoot = document.createElement("p")
 textefoot.textContent = "Kordan Radhouane - Lach Thearylou - Lu Ting Yung";
 textefoot.setAttribute = ("id", "foot");
+
+
+// Commander 
+var commander = document.createElement("button");
+commander.setAttribute = ("type", "button");
+commander.setAttribute = ("id", "commander");
+commander.textContent = "Commander";
+
 
 
 formMargherita.appendChild(labelFormMargherita);
@@ -145,9 +285,51 @@ formPepperoni.appendChild(labelChampignons2);
 formPepperoni.appendChild(olive);
 formPepperoni.appendChild(labelOlive);
 
+formPaiement.appendChild(labelFormPaiement);
+formPaiement.appendChild(br5);
+formPaiement.appendChild(credit);
+formPaiement.appendChild(labelCredit);
+formPaiement.appendChild(br6);
+formPaiement.appendChild(debit);
+formPaiement.appendChild(labelDebit);
+formPaiement.appendChild(br7);
+formPaiement.appendChild(especes);
+formPaiement.appendChild(labelEspeces);
+
+formClient.appendChild(labelFormClient);
+formClient.appendChild(br8);
+formClient.appendChild(labelNom);
+formClient.appendChild(nom);
+formClient.appendChild(br9);
+formClient.appendChild(labelPrenom);
+formClient.appendChild(prenom);
+formClient.appendChild(br10);
+formClient.appendChild(labelTelephone1);
+formClient.appendChild(telephone1);
+formClient.appendChild(br11);
+formClient.appendChild(labelAdresse1);
+formClient.appendChild(adresse1);
+
+formLivraison.appendChild(labelFormLivraison);
+formLivraison.appendChild(br12);
+formLivraison.appendChild(labelNomPrenom);
+formLivraison.appendChild(nomPrenom);
+formLivraison.appendChild(br13);
+formLivraison.appendChild(labelTelephone2);
+formLivraison.appendChild(telephone2);
+formLivraison.appendChild(br14);
+formLivraison.appendChild(labelAdresse2);
+formLivraison.appendChild(adresse2);
+
 foot.appendChild(textefoot);
+
 
 document.body.appendChild(titre);
 document.body.appendChild(formMargherita);
 document.body.appendChild(formPepperoni);
+document.body.appendChild(formPaiement);
+document.body.appendChild(formClient);
+document.body.appendChild(formLivraison);
+document.body.appendChild(commander);
 document.body.appendChild(foot);
+

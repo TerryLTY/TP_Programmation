@@ -1,3 +1,4 @@
+
 // Titre
 var titre = document.createElement("h1");
 titre.setAttribute("id", "titre");
@@ -17,7 +18,7 @@ var br1 = document.createElement("br");
 
 var margheritaCheck = document.createElement("input");
 margheritaCheck.setAttribute("type", "checkbox");
-margheritaCheck.setAttribute("id", "margheritacheck");
+margheritaCheck.setAttribute("id", "margheritaCheck");
 
 var labelQMargherita = document.createElement("label");
 labelQMargherita.setAttribute("for", "qmargherita");
@@ -27,7 +28,7 @@ var qMargherita = document.createElement("input");
 qMargherita.setAttribute("type", "number");
 qMargherita.setAttribute("min", "0");
 qMargherita.setAttribute("max", "50");
-qMargherita.setAttribute("id", "qmargherita");
+qMargherita.setAttribute("id", "qMargherita");
 
 var br2 = document.createElement("br");
 
@@ -71,7 +72,7 @@ var br3 = document.createElement("br");
 
 var pepperoniCheck = document.createElement("input");
 pepperoniCheck.setAttribute("type", "checkbox");
-pepperoniCheck.setAttribute("id", "pepperonicheck");
+pepperoniCheck.setAttribute("id", "pepperoniCheck");
 
 var labelQPepperoni = document.createElement("label");
 labelQPepperoni.setAttribute("for", "pepperoni");
@@ -215,7 +216,7 @@ labelNomPrenom.textContent = " Nom et prénom : ";
 
 var nomPrenom = document.createElement("input");
 nomPrenom.setAttribute("type", "text");
-nomPrenom.setAttribute("id", "nomprenom");
+nomPrenom.setAttribute("id", "nomPrenom");
 
 var br13 = document.createElement("br");
 
@@ -249,6 +250,7 @@ var commander = document.createElement("button");
 commander.setAttribute("type", "button");
 commander.setAttribute("id", "commander");
 commander.textContent = "Commander";
+
 
 formMargherita.appendChild(labelFormMargherita);
 formMargherita.appendChild(br1);
@@ -327,3 +329,46 @@ document.body.appendChild(containeur);
 document.body.appendChild(foot);
 
 
+var formFacture = document.createElement("div");
+formFacture.setAttribute("id", "formFacture")
+var labelMaFacture = document.createElement("label");
+labelMaFacture.textContent = "Facture: ";
+var facture = document.createElement("p");
+facture.setAttribute("id", "facture");
+
+formFacture.appendChild(labelMaFacture);
+formFacture.appendChild(facture);
+document.body.appendChild(formFacture);
+
+
+commander.onclick = function commande() {
+    let margheritaCheck = document.getElementById("margheritaCheck").value;
+    let qMargherita = document.getElementById("qMargherita").value;
+    let fromage1 = document.getElementById("fromage1").value;
+    let champignons1 = document.getElementById("champignons1").value;
+    let oignons = document.getElementById("oignons").value;
+
+    let pepperoniCheck  = document.getElementById("pepperoniCheck").value;
+    let qPepperoni = document.getElementById("qPepperoni").value;
+    let fromage2 = document.getElementById("fromage2").value;
+    let champignons2 = document.getElementById("champignons2").value;
+    let olive = document.getElementById("olive").value;
+
+    let credit = document.getElementById("credit").value;
+    let debit = document.getElementById("debit").value;
+    let especes = document.getElementById("especes").value;
+
+    let nom = document.getElementById("nom").value;
+    let prenom = document.getElementById("prenom").value;
+    let telephone1 = document.getElementById("telephone1").value;
+    let adresse1 = document.getElementById("adresse1").value;
+    let nomPrenom = document.getElementById("nomPrenom").value;
+    let telephone2 = document.getElementById("telephone2").value;
+    let adresse2 = document.getElementById("adresse2").value;
+    
+    if (nom.length == 0 || prenom.length == 0 || telephone1.length == 0 || adresse1.length == 0 || nomPrenom.length == 0 || telephone2.length == 0 || adresse2.length == 0) {
+        alert("Formulaire incomplet");
+    } else {
+        facture.textContent = "test";
+    }
+}
